@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zJg-kq-Olq" customClass="FeaturedStoryHeader" customModule="Jamit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="465" height="477"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bs9-Nx-hIu">
+                    <rect key="frame" x="0.0" y="0.0" width="465" height="343"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="amA-8u-KQR" userLabel="layoutTrending">
+                            <rect key="frame" x="0.0" y="0.0" width="465" height="184"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmB-Lt-Hnm" customClass="PaddingUILabel" customModule="Jamit" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="465" height="39"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsr-fy-32U" userLabel="divider">
+                                    <rect key="frame" x="0.0" y="49" width="465" height="1"/>
+                                    <color key="backgroundColor" white="1" alpha="0.12" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="jFa-Ke-ber"/>
+                                    </constraints>
+                                </view>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="msL-Ko-qNZ">
+                                    <rect key="frame" x="0.0" y="60" width="465" height="124"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="msL-Ko-qNZ" secondAttribute="height" multiplier="3:0.8" id="4FX-Bb-wUY"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3MU-Oc-Jlc">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                    <connections>
+                                        <outlet property="dataSource" destination="zJg-kq-Olq" id="dPG-5Z-u4n"/>
+                                        <outlet property="delegate" destination="zJg-kq-Olq" id="0pV-Jo-asP"/>
+                                    </connections>
+                                </collectionView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VjF-T8-dGc" userLabel="layoutPopular">
+                            <rect key="frame" x="0.0" y="184" width="465" height="159"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBp-hd-0G4" customClass="PaddingUILabel" customModule="Jamit" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="465" height="39"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAm-ii-14R" userLabel="divider">
+                                    <rect key="frame" x="0.0" y="49" width="465" height="1"/>
+                                    <color key="backgroundColor" white="1" alpha="0.12" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="jvK-gX-nx3"/>
+                                    </constraints>
+                                </view>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="4ld-C3-A1g">
+                                    <rect key="frame" x="0.0" y="60" width="465" height="99"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rQ9-dM-bBx">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                    <connections>
+                                        <outlet property="dataSource" destination="zJg-kq-Olq" id="W02-Wa-xNB"/>
+                                        <outlet property="delegate" destination="zJg-kq-Olq" id="ykv-ua-jJe"/>
+                                    </connections>
+                                </collectionView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="4ld-C3-A1g" firstAttribute="height" secondItem="msL-Ko-qNZ" secondAttribute="height" multiplier="0.8" id="9EJ-8U-Xmg"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore Stories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKH-YY-U9T" customClass="PaddingUILabel" customModule="Jamit" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="427" width="465" height="39"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehj-XS-gjb" userLabel="divider">
+                    <rect key="frame" x="0.0" y="476" width="465" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="0.12" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="AAE-b8-dvo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="est-83-StK"/>
+            <constraints>
+                <constraint firstItem="ehj-XS-gjb" firstAttribute="leading" secondItem="zJg-kq-Olq" secondAttribute="leading" id="0ai-la-t7x"/>
+                <constraint firstItem="bs9-Nx-hIu" firstAttribute="top" secondItem="zJg-kq-Olq" secondAttribute="top" id="4Gf-Sa-sbr"/>
+                <constraint firstItem="WKH-YY-U9T" firstAttribute="leading" secondItem="zJg-kq-Olq" secondAttribute="leading" id="Kzn-E1-F9r"/>
+                <constraint firstAttribute="trailing" secondItem="ehj-XS-gjb" secondAttribute="trailing" id="Olk-cZ-sRt"/>
+                <constraint firstItem="bs9-Nx-hIu" firstAttribute="leading" secondItem="zJg-kq-Olq" secondAttribute="leading" id="WkX-qO-LE2"/>
+                <constraint firstAttribute="bottom" secondItem="ehj-XS-gjb" secondAttribute="bottom" id="Zup-Z6-VPB"/>
+                <constraint firstAttribute="trailing" secondItem="bs9-Nx-hIu" secondAttribute="trailing" id="gJO-oJ-ibr"/>
+                <constraint firstItem="ehj-XS-gjb" firstAttribute="top" secondItem="WKH-YY-U9T" secondAttribute="bottom" constant="10" id="gWy-Vc-8wF"/>
+                <constraint firstAttribute="trailing" secondItem="WKH-YY-U9T" secondAttribute="trailing" id="pfz-ob-kgf"/>
+            </constraints>
+            <connections>
+                <outlet property="collectionTopic" destination="4ld-C3-A1g" id="zvO-b7-Poy"/>
+                <outlet property="collectionTrendingUser" destination="msL-Ko-qNZ" id="a0S-NA-x74"/>
+                <outlet property="layoutTrending" destination="amA-8u-KQR" id="An7-gw-gB2"/>
+                <outlet property="lblExploreStories" destination="WKH-YY-U9T" id="zCZ-uT-KvX"/>
+                <outlet property="lblPopularTopic" destination="bBp-hd-0G4" id="DYx-Lz-EL8"/>
+                <outlet property="lblTrending" destination="wmB-Lt-Hnm" id="9v6-BB-mCl"/>
+            </connections>
+            <point key="canvasLocation" x="32.608695652173914" y="-192.52232142857142"/>
+        </collectionReusableView>
+    </objects>
+    <designables>
+        <designable name="WKH-YY-U9T">
+            <size key="intrinsicContentSize" width="194.5" height="39"/>
+        </designable>
+        <designable name="bBp-hd-0G4">
+            <size key="intrinsicContentSize" width="190" height="39"/>
+        </designable>
+        <designable name="wmB-Lt-Hnm">
+            <size key="intrinsicContentSize" width="119.5" height="39"/>
+        </designable>
+    </designables>
+</document>

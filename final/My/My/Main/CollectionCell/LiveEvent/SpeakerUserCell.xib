@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SpeakerUserCell" customModule="Jamit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMc-sY-YNc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLz-ie-rmh" userLabel="divider">
+                                <rect key="frame" x="0.0" y="63" width="375" height="1"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Nym-wB-Rpa"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kxA-EY-EP4" userLabel="ImgIcon">
+                                <rect key="frame" x="10" y="8" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kxA-EY-EP4" secondAttribute="height" multiplier="1:1" id="Ms4-pa-9o8"/>
+                                    <constraint firstAttribute="width" constant="48" id="SJg-Xo-zcW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SQ-72-YPy">
+                                <rect key="frame" x="68" y="23.5" width="189.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2k-vz-jKu" userLabel="btnEdit" customClass="AutoFillButton" customModule="Jamit" customModuleProvider="target">
+                                <rect key="frame" x="257.5" y="13" width="107.5" height="38"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.2274509804" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="c2k-vz-jKu" secondAttribute="height" multiplier="2.8:1" id="swb-vT-YLt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="14"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textId" value="title_edit"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="editTap:" destination="gTV-IL-0wX" eventType="touchUpInside" id="MYm-mX-97H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5SQ-72-YPy" firstAttribute="centerY" secondItem="VMc-sY-YNc" secondAttribute="centerY" id="1ZH-6C-oEM"/>
+                            <constraint firstAttribute="trailing" secondItem="BLz-ie-rmh" secondAttribute="trailing" id="2iZ-mq-HBk"/>
+                            <constraint firstItem="kxA-EY-EP4" firstAttribute="centerY" secondItem="VMc-sY-YNc" secondAttribute="centerY" id="Bcz-W9-jFe"/>
+                            <constraint firstItem="BLz-ie-rmh" firstAttribute="leading" secondItem="VMc-sY-YNc" secondAttribute="leading" id="Iym-MN-vcJ"/>
+                            <constraint firstItem="kxA-EY-EP4" firstAttribute="leading" secondItem="VMc-sY-YNc" secondAttribute="leading" constant="10" id="Nw6-0c-MWq"/>
+                            <constraint firstItem="c2k-vz-jKu" firstAttribute="height" secondItem="VMc-sY-YNc" secondAttribute="height" multiplier="0.6" id="PRz-pS-fxQ"/>
+                            <constraint firstItem="c2k-vz-jKu" firstAttribute="leading" secondItem="5SQ-72-YPy" secondAttribute="trailing" id="eee-6w-M3u"/>
+                            <constraint firstItem="c2k-vz-jKu" firstAttribute="centerY" secondItem="VMc-sY-YNc" secondAttribute="centerY" id="kfn-9k-zPF"/>
+                            <constraint firstAttribute="trailing" secondItem="c2k-vz-jKu" secondAttribute="trailing" constant="10" id="tsU-Jd-5hr"/>
+                            <constraint firstAttribute="bottom" secondItem="BLz-ie-rmh" secondAttribute="bottom" id="tzV-57-bwL"/>
+                            <constraint firstItem="5SQ-72-YPy" firstAttribute="leading" secondItem="kxA-EY-EP4" secondAttribute="trailing" constant="10" id="vcl-W5-08x"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VMc-sY-YNc" secondAttribute="bottom" id="00m-6S-6RO"/>
+                <constraint firstItem="VMc-sY-YNc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ETO-9h-mQ4"/>
+                <constraint firstItem="VMc-sY-YNc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="G1g-wK-WA1"/>
+                <constraint firstAttribute="trailing" secondItem="VMc-sY-YNc" secondAttribute="trailing" id="KcT-dF-s92"/>
+            </constraints>
+            <size key="customSize" width="297" height="97"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imgIcon" destination="kxA-EY-EP4" id="tfg-ps-vpv"/>
+                <outlet property="lblName" destination="5SQ-72-YPy" id="h1v-uq-rYV"/>
+                <outlet property="rootLayout" destination="VMc-sY-YNc" id="cok-IN-WjG"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="52.173913043478265"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="c2k-vz-jKu">
+            <size key="intrinsicContentSize" width="53" height="29"/>
+        </designable>
+    </designables>
+</document>

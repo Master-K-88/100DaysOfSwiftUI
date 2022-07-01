@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Uprade Member Controller-->
+        <scene sceneID="Ge5-4s-X7c">
+            <objects>
+                <viewController storyboardIdentifier="UpradeMemberViewController" id="llR-pw-zDx" userLabel="Uprade Member Controller" customClass="UpradeMemberViewController" customModule="Jamit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EXx-uN-0bN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3C0-jG-egn" userLabel="ActionBar">
+                                <rect key="frame" x="0.0" y="44" width="414" height="54"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zbs-7q-H5G">
+                                        <rect key="frame" x="10" y="15" width="138" height="24"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfj-4l-XKK">
+                                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="yfj-4l-XKK" secondAttribute="height" multiplier="1:1" id="d39-dd-mp5"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_back_white_24dp"/>
+                                                <connections>
+                                                    <action selector="backTap:" destination="llR-pw-zDx" eventType="touchUpInside" id="F1h-9S-cn4"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TitleScreen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeg-ZO-9eb" customClass="AutoFillLabel" customModule="Jamit" customModuleProvider="target">
+                                                <rect key="frame" x="34" y="0.0" width="104" height="24"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textId" value="title_update_premium"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="27"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="xeg-ZO-9eb" secondAttribute="trailing" id="Npf-gd-DXV"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="yfj-4l-XKK" firstAttribute="height" secondItem="3C0-jG-egn" secondAttribute="height" multiplier="0.444444" id="Hbu-tx-Qw8"/>
+                                    <constraint firstItem="zbs-7q-H5G" firstAttribute="centerY" secondItem="3C0-jG-egn" secondAttribute="centerY" id="OHK-Cl-flL"/>
+                                    <constraint firstItem="zbs-7q-H5G" firstAttribute="leading" secondItem="3C0-jG-egn" secondAttribute="leading" constant="10" id="Wow-58-xdB"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FRc-rV-xQa">
+                                <rect key="frame" x="0.0" y="98" width="414" height="798"/>
+                                <color key="backgroundColor" red="0.1333333333" green="0.1215686275" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="F65-QM-8IB">
+                                <rect key="frame" x="0.0" y="98" width="414" height="500.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1L7-Fd-abM">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="llR-pw-zDx" id="sZB-Gz-RSr"/>
+                                    <outlet property="delegate" destination="llR-pw-zDx" id="uiZ-ls-ojh"/>
+                                </connections>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bYI-FJ-7wd">
+                                <rect key="frame" x="20" y="614.5" width="374" height="231.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq5-hf-gPa" customClass="AutoFillButton" customModule="Jamit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="35"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
+                                        <state key="normal" title="Restore Purchases">
+                                            <color key="titleColor" red="0.9882352941176471" green="0.22745098039215686" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="textId" value="title_restore_purchase"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="24"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="restoreTap:" destination="llR-pw-zDx" eventType="touchUpInside" id="aBD-hW-AIq"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgN-sx-I6R">
+                                        <rect key="frame" x="0.0" y="55" width="374" height="176.5"/>
+                                        <string key="text">Subscription payments will be charged to your iTunes account at confirmation of your purchase. Your subscription will automatically renew and payment will be charged to your iTunes account unless auto-renew is turned off at least 24 hours prior to the end of the current period in your Itunes account settings on the App Store. For more information, please see our Term Of Use and Privacy Policy</string>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="21"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bbd-4x-sfX"/>
+                        <color key="backgroundColor" red="0.098039215690000001" green="0.086274509799999996" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FRc-rV-xQa" firstAttribute="leading" secondItem="EXx-uN-0bN" secondAttribute="leading" id="1GM-hC-kvY"/>
+                            <constraint firstAttribute="trailing" secondItem="3C0-jG-egn" secondAttribute="trailing" id="3eb-he-p0a"/>
+                            <constraint firstAttribute="bottom" secondItem="bYI-FJ-7wd" secondAttribute="bottom" constant="50" id="5yZ-SN-4wd"/>
+                            <constraint firstAttribute="trailing" secondItem="F65-QM-8IB" secondAttribute="trailing" id="A94-hH-yi4"/>
+                            <constraint firstItem="3C0-jG-egn" firstAttribute="height" secondItem="EXx-uN-0bN" secondAttribute="height" multiplier="0.0602679" id="BpC-Ye-FdP"/>
+                            <constraint firstItem="3C0-jG-egn" firstAttribute="leading" secondItem="EXx-uN-0bN" secondAttribute="leading" id="LIu-lB-j9y"/>
+                            <constraint firstAttribute="trailing" secondItem="bYI-FJ-7wd" secondAttribute="trailing" constant="20" id="Ndr-Sp-3h1"/>
+                            <constraint firstAttribute="trailing" secondItem="FRc-rV-xQa" secondAttribute="trailing" id="PPJ-od-XQS"/>
+                            <constraint firstItem="F65-QM-8IB" firstAttribute="leading" secondItem="EXx-uN-0bN" secondAttribute="leading" id="Pw0-3A-PZg"/>
+                            <constraint firstItem="F65-QM-8IB" firstAttribute="top" secondItem="3C0-jG-egn" secondAttribute="bottom" id="SN9-yW-lnm"/>
+                            <constraint firstItem="3C0-jG-egn" firstAttribute="top" secondItem="Bbd-4x-sfX" secondAttribute="top" id="Tya-UY-5kw"/>
+                            <constraint firstItem="bYI-FJ-7wd" firstAttribute="leading" secondItem="EXx-uN-0bN" secondAttribute="leading" constant="20" id="X4Q-be-ZUQ"/>
+                            <constraint firstAttribute="bottom" secondItem="FRc-rV-xQa" secondAttribute="bottom" id="hIR-cB-Vco"/>
+                            <constraint firstItem="bYI-FJ-7wd" firstAttribute="top" secondItem="F65-QM-8IB" secondAttribute="bottom" constant="16" id="vvM-jr-rol"/>
+                            <constraint firstItem="FRc-rV-xQa" firstAttribute="top" secondItem="3C0-jG-egn" secondAttribute="bottom" id="vvU-eA-sqR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="F65-QM-8IB" id="RQT-13-snD"/>
+                        <outlet property="lblEulaInfo" destination="sgN-sx-I6R" id="S5K-0B-hlC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YGp-Qi-hC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="78"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Zq5-hf-gPa">
+            <size key="intrinsicContentSize" width="195" height="35"/>
+        </designable>
+        <designable name="xeg-ZO-9eb">
+            <size key="intrinsicContentSize" width="104" height="25.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_back_white_24dp" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TopicCell" customModule="Jamit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="108" height="36"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="108" height="36"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMc-sY-YNc">
+                        <rect key="frame" x="0.0" y="0.0" width="108" height="36"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1bV-nF-Vr1">
+                                <rect key="frame" x="5" y="6" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="0z7-ui-wvh"/>
+                                    <constraint firstAttribute="width" secondItem="1bV-nF-Vr1" secondAttribute="height" multiplier="1:1" id="UmR-N5-KXS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JamIt" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SQ-72-YPy">
+                                <rect key="frame" x="34" y="10.5" width="69" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1bV-nF-Vr1" firstAttribute="leading" secondItem="VMc-sY-YNc" secondAttribute="leading" constant="5" id="0xz-pA-buK"/>
+                            <constraint firstItem="5SQ-72-YPy" firstAttribute="centerY" secondItem="VMc-sY-YNc" secondAttribute="centerY" id="8d4-cK-Krl"/>
+                            <constraint firstItem="5SQ-72-YPy" firstAttribute="leading" secondItem="1bV-nF-Vr1" secondAttribute="trailing" constant="5" id="Hk7-xz-3Yp"/>
+                            <constraint firstItem="1bV-nF-Vr1" firstAttribute="centerY" secondItem="VMc-sY-YNc" secondAttribute="centerY" id="lqA-Pw-eOw"/>
+                            <constraint firstAttribute="trailing" secondItem="5SQ-72-YPy" secondAttribute="trailing" constant="5" id="qZV-5v-2SH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VMc-sY-YNc" secondAttribute="bottom" id="00m-6S-6RO"/>
+                <constraint firstItem="VMc-sY-YNc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ETO-9h-mQ4"/>
+                <constraint firstItem="VMc-sY-YNc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="G1g-wK-WA1"/>
+                <constraint firstAttribute="trailing" secondItem="VMc-sY-YNc" secondAttribute="trailing" id="Iiy-5a-tbz"/>
+                <constraint firstAttribute="trailing" secondItem="VMc-sY-YNc" secondAttribute="trailing" id="KcT-dF-s92"/>
+                <constraint firstItem="VMc-sY-YNc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fih-aJ-PRO"/>
+                <constraint firstItem="VMc-sY-YNc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iI5-vv-aWt"/>
+                <constraint firstAttribute="bottom" secondItem="VMc-sY-YNc" secondAttribute="bottom" id="ty6-cB-sLg"/>
+            </constraints>
+            <size key="customSize" width="524" height="327"/>
+            <connections>
+                <outlet property="imgTopic" destination="1bV-nF-Vr1" id="aKp-LL-6PR"/>
+                <outlet property="lblName" destination="5SQ-72-YPy" id="h1v-uq-rYV"/>
+                <outlet property="rootLayout" destination="VMc-sY-YNc" id="cok-IN-WjG"/>
+            </connections>
+            <point key="canvasLocation" x="33.600000000000001" y="-165.96701649175412"/>
+        </collectionViewCell>
+    </objects>
+</document>

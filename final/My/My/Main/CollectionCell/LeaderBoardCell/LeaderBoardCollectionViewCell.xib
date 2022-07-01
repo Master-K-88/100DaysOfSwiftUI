@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LeaderBoardCollectionViewCell" customModule="Jamit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="471" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="471" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yi0-WM-ccj">
+                        <rect key="frame" x="0.0" y="0.0" width="471" height="130"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_avatar_48dp" translatesAutoresizingMaskIntoConstraints="NO" id="uYN-yf-CXY">
+                                <rect key="frame" x="15" y="40" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="82N-hz-irQ"/>
+                                    <constraint firstAttribute="width" secondItem="uYN-yf-CXY" secondAttribute="height" multiplier="1:1" id="UIN-UM-oJf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJV-xN-e7y">
+                                <rect key="frame" x="95" y="55" width="40" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="GVv-gn-Ude"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z83-iK-ALe">
+                                <rect key="frame" x="135" y="55" width="190" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="cqU-1i-j7z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNd-IS-Qd0">
+                                <rect key="frame" x="406" y="40" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="BTb-g9-bAD"/>
+                                    <constraint firstAttribute="width" secondItem="hNd-IS-Qd0" secondAttribute="height" multiplier="1:1" id="Pp1-Ui-eLn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="17.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="followTap:" destination="gTV-IL-0wX" eventType="touchUpInside" id="VMk-H1-6I1"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rd5-LF-pCF">
+                                <rect key="frame" x="5" y="129" width="461" height="1"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="T0c-cC-uTe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uYN-yf-CXY" firstAttribute="centerY" secondItem="yi0-WM-ccj" secondAttribute="centerY" id="80K-e8-xZo"/>
+                            <constraint firstItem="hNd-IS-Qd0" firstAttribute="centerY" secondItem="yi0-WM-ccj" secondAttribute="centerY" id="Bh2-fH-O8Z"/>
+                            <constraint firstAttribute="trailing" secondItem="hNd-IS-Qd0" secondAttribute="trailing" constant="15" id="Eoj-12-dyU"/>
+                            <constraint firstAttribute="bottom" secondItem="rd5-LF-pCF" secondAttribute="bottom" id="GeS-CN-XHA"/>
+                            <constraint firstItem="MJV-xN-e7y" firstAttribute="centerY" secondItem="yi0-WM-ccj" secondAttribute="centerY" id="SKI-OA-GBM"/>
+                            <constraint firstAttribute="trailing" secondItem="rd5-LF-pCF" secondAttribute="trailing" constant="5" id="ShX-vY-fUb"/>
+                            <constraint firstItem="MJV-xN-e7y" firstAttribute="leading" secondItem="uYN-yf-CXY" secondAttribute="trailing" constant="30" id="TuI-0V-WdD"/>
+                            <constraint firstItem="rd5-LF-pCF" firstAttribute="leading" secondItem="yi0-WM-ccj" secondAttribute="leading" constant="5" id="e5d-ee-nae"/>
+                            <constraint firstItem="uYN-yf-CXY" firstAttribute="leading" secondItem="yi0-WM-ccj" secondAttribute="leading" constant="15" id="grw-a8-s4G"/>
+                            <constraint firstItem="Z83-iK-ALe" firstAttribute="centerY" secondItem="yi0-WM-ccj" secondAttribute="centerY" id="kIC-cR-vPw"/>
+                            <constraint firstItem="Z83-iK-ALe" firstAttribute="leading" secondItem="MJV-xN-e7y" secondAttribute="trailing" id="tSf-d4-dcq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="yi0-WM-ccj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OPS-Xu-H16"/>
+                <constraint firstItem="yi0-WM-ccj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PmN-H0-JM6"/>
+                <constraint firstAttribute="bottom" secondItem="yi0-WM-ccj" secondAttribute="bottom" id="bsO-34-KvJ"/>
+                <constraint firstAttribute="trailing" secondItem="yi0-WM-ccj" secondAttribute="trailing" id="iEV-bF-0fc"/>
+            </constraints>
+            <size key="customSize" width="471" height="130"/>
+            <connections>
+                <outlet property="btnInfo" destination="hNd-IS-Qd0" id="Unc-c2-YMM"/>
+                <outlet property="imgView" destination="uYN-yf-CXY" id="KR8-x9-2PM"/>
+                <outlet property="lblPos" destination="MJV-xN-e7y" id="9zR-5P-uFb"/>
+                <outlet property="lblUsername" destination="Z83-iK-ALe" id="GOL-Uo-Wpx"/>
+            </connections>
+            <point key="canvasLocation" x="128.2608695652174" y="106.47321428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_avatar_48dp" width="48" height="48"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

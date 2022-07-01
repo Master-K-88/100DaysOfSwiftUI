@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zJg-kq-Olq" customClass="HomeHeader" customModule="Jamit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="465" height="639"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGq-P5-L4v" userLabel="FeaturedBanner">
+                    <rect key="frame" x="0.0" y="0.0" width="465" height="232.5"/>
+                    <subviews>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="w1o-NH-Tdj">
+                            <rect key="frame" x="175" y="206.5" width="115.5" height="26"/>
+                            <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </pageControl>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="w1o-NH-Tdj" firstAttribute="centerX" secondItem="ZGq-P5-L4v" secondAttribute="centerX" id="I6p-7h-akr"/>
+                        <constraint firstAttribute="bottom" secondItem="w1o-NH-Tdj" secondAttribute="bottom" id="WTm-kz-jhf"/>
+                        <constraint firstAttribute="width" secondItem="ZGq-P5-L4v" secondAttribute="height" multiplier="2:1" id="fFN-gk-pAc"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bs9-Nx-hIu">
+                    <rect key="frame" x="10" y="232.5" width="445" height="406"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mrs-qR-zp3" userLabel="layoutTopAudioType">
+                            <rect key="frame" x="0.0" y="0.0" width="445" height="93"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="db5-Eb-F3X">
+                                    <rect key="frame" x="0.0" y="10" width="445" height="83"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r05-bU-jJr" userLabel="live">
+                                            <rect key="frame" x="0.0" y="0.0" width="104" height="83"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DK4-YD-NuH" userLabel="stackContent">
+                                                    <rect key="frame" x="40" y="20" width="24" height="43.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_event_live_36dp" translatesAutoresizingMaskIntoConstraints="NO" id="yh9-zi-0jo">
+                                                            <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="yh9-zi-0jo" secondAttribute="height" multiplier="1:1" id="chM-TU-ufF"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lra-yW-a48" customClass="AutoFillLabel" customModule="Jamit" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="29" width="23.5" height="14.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="textId" value="title_event_page"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                            </variation>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoF-Nf-pd2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="104" height="83"/>
+                                                    <connections>
+                                                        <action selector="liveTap:" destination="zJg-kq-Olq" eventType="touchUpInside" id="dY3-b3-lqj"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.81960784313725488" green="0.1764705882352941" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="JoF-Nf-pd2" firstAttribute="leading" secondItem="r05-bU-jJr" secondAttribute="leading" id="S8h-zG-Xge"/>
+                                                <constraint firstItem="JoF-Nf-pd2" firstAttribute="top" secondItem="r05-bU-jJr" secondAttribute="top" id="Z8i-nL-epp"/>
+                                                <constraint firstAttribute="trailing" secondItem="JoF-Nf-pd2" secondAttribute="trailing" id="dlN-Ef-nkW"/>
+                                                <constraint firstItem="DK4-YD-NuH" firstAttribute="centerY" secondItem="r05-bU-jJr" secondAttribute="centerY" id="f6f-kz-FQK"/>
+                                                <constraint firstItem="DK4-YD-NuH" firstAttribute="centerX" secondItem="r05-bU-jJr" secondAttribute="centerX" id="thP-yS-amI"/>
+                                                <constraint firstAttribute="bottom" secondItem="JoF-Nf-pd2" secondAttribute="bottom" id="vpy-pc-DTk"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="7"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN6-D0-YA7" userLabel="podcast">
+                                            <rect key="frame" x="114" y="0.0" width="103.5" height="83"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Dyr-NY-ZVV" userLabel="stackContent">
+                                                    <rect key="frame" x="24.5" y="20" width="54" height="43.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_podcast_36dp" translatesAutoresizingMaskIntoConstraints="NO" id="oKb-J5-XNA">
+                                                            <rect key="frame" x="15" y="0.0" width="24" height="24"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="oKb-J5-XNA" secondAttribute="height" multiplier="1:1" id="aOf-5A-DSU"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Podcasts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kB-ZM-vFo" customClass="AutoFillLabel" customModule="Jamit" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="29" width="54" height="14.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="textId" value="title_podcasts"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                            </variation>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb5-cs-GGM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="103.5" height="83"/>
+                                                    <connections>
+                                                        <action selector="podcastTap:" destination="zJg-kq-Olq" eventType="touchUpInside" id="TBZ-Og-R6Q"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.4941176471" green="0.2470588235" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="tb5-cs-GGM" secondAttribute="trailing" id="5yd-uH-NMP"/>
+                                                <constraint firstItem="Dyr-NY-ZVV" firstAttribute="centerY" secondItem="iN6-D0-YA7" secondAttribute="centerY" id="Esj-Ef-F0A"/>
+                                                <constraint firstItem="tb5-cs-GGM" firstAttribute="leading" secondItem="iN6-D0-YA7" secondAttribute="leading" id="TwN-lR-iTS"/>
+                                                <constraint firstItem="tb5-cs-GGM" firstAttribute="top" secondItem="iN6-D0-YA7" secondAttribute="top" id="ce8-G3-skP"/>
+                                                <constraint firstAttribute="bottom" secondItem="tb5-cs-GGM" secondAttribute="bottom" id="j8J-Cd-UQx"/>
+                                                <constraint firstItem="Dyr-NY-ZVV" firstAttribute="centerX" secondItem="iN6-D0-YA7" secondAttribute="centerX" id="s1t-Oa-rQE"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="7"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ChP-pn-0zI" userLabel="stories">
+                                            <rect key="frame" x="227.5" y="0.0" width="104" height="83"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="poW-Wv-aTv" userLabel="stackContent">
+                                                    <rect key="frame" x="31.5" y="20" width="40.5" height="43.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_stories_36dp" translatesAutoresizingMaskIntoConstraints="NO" id="851-z7-xR2">
+                                                            <rect key="frame" x="8.5" y="0.0" width="24" height="24"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="851-z7-xR2" secondAttribute="height" multiplier="1:1" id="KdU-B6-1nb"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfR-zo-zKq" customClass="AutoFillLabel" customModule="Jamit" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="29" width="40.5" height="14.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="textId" value="title_stories"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                            </variation>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDT-oS-Eal">
+                                                    <rect key="frame" x="0.0" y="0.0" width="104" height="83"/>
+                                                    <connections>
+                                                        <action selector="storyTap:" destination="zJg-kq-Olq" eventType="touchUpInside" id="azP-Wv-JiS"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.99607843137254903" green="0.52549019607843139" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="RDT-oS-Eal" firstAttribute="top" secondItem="ChP-pn-0zI" secondAttribute="top" id="0n9-NK-G8b"/>
+                                                <constraint firstItem="poW-Wv-aTv" firstAttribute="centerX" secondItem="ChP-pn-0zI" secondAttribute="centerX" id="BzF-gg-axa"/>
+                                                <constraint firstItem="poW-Wv-aTv" firstAttribute="centerY" secondItem="ChP-pn-0zI" secondAttribute="centerY" id="S23-Cx-1XT"/>
+                                                <constraint firstItem="RDT-oS-Eal" firstAttribute="leading" secondItem="ChP-pn-0zI" secondAttribute="leading" id="VDF-lP-kWq"/>
+                                                <constraint firstAttribute="trailing" secondItem="RDT-oS-Eal" secondAttribute="trailing" id="YRp-Hb-bvM"/>
+                                                <constraint firstAttribute="bottom" secondItem="RDT-oS-Eal" secondAttribute="bottom" id="t27-wq-g5i"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="7"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pea-DM-Juf" userLabel="audioBooks">
+                                            <rect key="frame" x="341.5" y="0.0" width="103.5" height="83"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ra3-Td-1Tl" userLabel="stackContent">
+                                                    <rect key="frame" x="15" y="20" width="73" height="43.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_audio_books_36dp" translatesAutoresizingMaskIntoConstraints="NO" id="zuV-a7-a7b">
+                                                            <rect key="frame" x="24.5" y="0.0" width="24" height="24"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="zuV-a7-a7b" secondAttribute="height" multiplier="1:1" id="GP5-qh-yLh"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio Books" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQm-NH-ZLh" customClass="AutoFillLabel" customModule="Jamit" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="29" width="73" height="14.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="textId" value="title_audio_books"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                            </variation>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8H-Yc-NSc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="103.5" height="83"/>
+                                                    <connections>
+                                                        <action selector="audioBookTap:" destination="zJg-kq-Olq" eventType="touchUpInside" id="GIY-n9-NRQ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.38039215686274508" green="0.84705882352941175" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="b8H-Yc-NSc" secondAttribute="bottom" id="8Wz-xR-Jea"/>
+                                                <constraint firstItem="b8H-Yc-NSc" firstAttribute="top" secondItem="pea-DM-Juf" secondAttribute="top" id="9Bc-Ut-Axi"/>
+                                                <constraint firstItem="Ra3-Td-1Tl" firstAttribute="centerY" secondItem="pea-DM-Juf" secondAttribute="centerY" id="PIM-QC-jFf"/>
+                                                <constraint firstAttribute="trailing" secondItem="b8H-Yc-NSc" secondAttribute="trailing" id="e5P-hR-5Lf"/>
+                                                <constraint firstItem="b8H-Yc-NSc" firstAttribute="leading" secondItem="pea-DM-Juf" secondAttribute="leading" id="tFv-7e-shB"/>
+                                                <constraint firstItem="Ra3-Td-1Tl" firstAttribute="centerX" secondItem="pea-DM-Juf" secondAttribute="centerX" id="vZb-00-Fi6"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="7"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="oKb-J5-XNA" firstAttribute="height" secondItem="Mrs-qR-zp3" secondAttribute="height" multiplier="0.258065" id="73P-qi-de6"/>
+                                <constraint firstItem="yh9-zi-0jo" firstAttribute="height" secondItem="Mrs-qR-zp3" secondAttribute="height" multiplier="0.258065" id="FEh-FL-1Mn"/>
+                                <constraint firstAttribute="bottom" secondItem="db5-Eb-F3X" secondAttribute="bottom" id="RoR-dN-MCK"/>
+                                <constraint firstItem="db5-Eb-F3X" firstAttribute="top" secondItem="Mrs-qR-zp3" secondAttribute="top" constant="10" id="c4V-Eb-osw"/>
+                                <constraint firstItem="zuV-a7-a7b" firstAttribute="height" secondItem="Mrs-qR-zp3" secondAttribute="height" multiplier="0.258065" id="cnw-rl-6Ca"/>
+                                <constraint firstAttribute="trailing" secondItem="db5-Eb-F3X" secondAttribute="trailing" id="hMW-x5-IL3"/>
+                                <constraint firstItem="851-z7-xR2" firstAttribute="height" secondItem="Mrs-qR-zp3" secondAttribute="height" multiplier="0.258065" id="nNQ-of-rgv"/>
+                                <constraint firstItem="db5-Eb-F3X" firstAttribute="leading" secondItem="Mrs-qR-zp3" secondAttribute="leading" id="p3l-1x-X4F"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="amA-8u-KQR" userLabel="layoutTrending">
+                            <rect key="frame" x="0.0" y="109" width="445" height="238"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmB-Lt-Hnm" customClass="AutoFillLabel" customModule="Jamit" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="445" height="52"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                            <real key="value" value="15"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="textId" value="title_trending_show"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="msL-Ko-qNZ">
+                                    <rect key="frame" x="0.0" y="60" width="445" height="178"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="msL-Ko-qNZ" secondAttribute="height" multiplier="3:1.2" id="4FX-Bb-wUY"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3MU-Oc-Jlc">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                    <connections>
+                                        <outlet property="dataSource" destination="zJg-kq-Olq" id="dPG-5Z-u4n"/>
+                                        <outlet property="delegate" destination="zJg-kq-Olq" id="0pV-Jo-asP"/>
+                                    </connections>
+                                </collectionView>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKH-YY-U9T" customClass="AutoFillLabel" customModule="Jamit" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="363" width="445" height="43"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="textId" value="title_featured_stories"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehj-XS-gjb" userLabel="divider">
+                    <rect key="frame" x="0.0" y="638" width="465" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="0.12" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="AAE-b8-dvo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="est-83-StK"/>
+            <constraints>
+                <constraint firstItem="ehj-XS-gjb" firstAttribute="leading" secondItem="zJg-kq-Olq" secondAttribute="leading" id="0ai-la-t7x"/>
+                <constraint firstAttribute="trailing" secondItem="ZGq-P5-L4v" secondAttribute="trailing" id="1uN-8u-kCR"/>
+                <constraint firstItem="ZGq-P5-L4v" firstAttribute="top" secondItem="zJg-kq-Olq" secondAttribute="top" id="5YB-li-FYb"/>
+                <constraint firstItem="ZGq-P5-L4v" firstAttribute="leading" secondItem="zJg-kq-Olq" secondAttribute="leading" id="ISf-Xa-lqY"/>
+                <constraint firstAttribute="trailing" secondItem="ehj-XS-gjb" secondAttribute="trailing" id="Olk-cZ-sRt"/>
+                <constraint firstItem="bs9-Nx-hIu" firstAttribute="leading" secondItem="zJg-kq-Olq" secondAttribute="leading" constant="10" id="WkX-qO-LE2"/>
+                <constraint firstAttribute="bottom" secondItem="ehj-XS-gjb" secondAttribute="bottom" id="Zup-Z6-VPB"/>
+                <constraint firstItem="Mrs-qR-zp3" firstAttribute="height" secondItem="ZGq-P5-L4v" secondAttribute="height" multiplier="0.4" id="bCm-ql-k47"/>
+                <constraint firstAttribute="trailing" secondItem="bs9-Nx-hIu" secondAttribute="trailing" constant="10" id="gJO-oJ-ibr"/>
+                <constraint firstItem="bs9-Nx-hIu" firstAttribute="top" secondItem="ZGq-P5-L4v" secondAttribute="bottom" id="wRP-rf-rpn"/>
+            </constraints>
+            <connections>
+                <outlet property="collectionTrendingPodcast" destination="msL-Ko-qNZ" id="a0S-NA-x74"/>
+                <outlet property="featureContainer" destination="ZGq-P5-L4v" id="rU6-Zh-tZw"/>
+                <outlet property="featurePageControl" destination="w1o-NH-Tdj" id="n0i-SW-3lS"/>
+                <outlet property="layoutAudioBooks" destination="pea-DM-Juf" id="N3F-Ut-ZhQ"/>
+                <outlet property="layoutLive" destination="r05-bU-jJr" id="WTn-lX-KkV"/>
+                <outlet property="layoutPodcast" destination="iN6-D0-YA7" id="gBC-c8-PCv"/>
+                <outlet property="layoutStories" destination="ChP-pn-0zI" id="bRq-5a-elw"/>
+                <outlet property="layoutTopAudioType" destination="Mrs-qR-zp3" id="gRS-cj-U4J"/>
+                <outlet property="layoutTrending" destination="amA-8u-KQR" id="An7-gw-gB2"/>
+                <outlet property="lblFeaturedStories" destination="WKH-YY-U9T" id="ows-Ui-RbW"/>
+                <outlet property="lblTrending" destination="wmB-Lt-Hnm" id="9v6-BB-mCl"/>
+            </connections>
+            <point key="canvasLocation" x="32.608695652173914" y="-242.07589285714283"/>
+        </collectionReusableView>
+    </objects>
+    <designables>
+        <designable name="0kB-ZM-vFo">
+            <size key="intrinsicContentSize" width="80.5" height="14.5"/>
+        </designable>
+        <designable name="CQm-NH-ZLh">
+            <size key="intrinsicContentSize" width="101" height="14.5"/>
+        </designable>
+        <designable name="WKH-YY-U9T">
+            <size key="intrinsicContentSize" width="241" height="43"/>
+        </designable>
+        <designable name="WfR-zo-zKq">
+            <size key="intrinsicContentSize" width="67" height="14.5"/>
+        </designable>
+        <designable name="lra-yW-a48">
+            <size key="intrinsicContentSize" width="93.5" height="14.5"/>
+        </designable>
+        <designable name="wmB-Lt-Hnm">
+            <size key="intrinsicContentSize" width="223.5" height="52"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_audio_books_36dp" width="36" height="36"/>
+        <image name="ic_event_live_36dp" width="36" height="36"/>
+        <image name="ic_podcast_36dp" width="36" height="36"/>
+        <image name="ic_stories_36dp" width="36" height="36"/>
+    </resources>
+</document>

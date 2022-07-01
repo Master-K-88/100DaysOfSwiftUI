@@ -1,0 +1,492 @@
+/* 
+  Localizable.strings
+  Created by YPY Global
+  Copyright © 2019 YPY Global. All rights reserved.
+*/
+"otp_title" = "Enter OTP";
+"otp_info" = "A four character otp has been sent to ";
+"request_otp" = "Request OTP again in: ";
+"verify_otp" = "Verify OTP";
+
+"app_name" = "Jamit";
+"title_copyright" = "©2022 Jamit";
+"title_home_screen" = "Jamit";
+"title_unknown" = "Unknown";
+
+"title_tab_discover" = "Discover";
+"title_tab_shows" = "Shows";
+"title_favorite" = "My Favourites";
+
+"title_privacy_policy" = "Privacy Policy";
+"title_term_of_use" = "Term of Use";
+"title_rate_us" = "Rate the Jamit app";
+"title_visit_fb" = "Facebook";
+"title_visit_twitter" = "Twitter";
+"title_visit_website" = "Website";
+"title_visit_insta" = "Instagram";
+"title_tell_a_friend" = "Share with a Friend";
+"title_contact_us" = "Contact Us";
+"title_setting_ads" = "Advertisement Settings";
+
+"title_no_data" = "No data found";
+"info_no_favorite" = "Nothing here yet, please add";
+
+"info_connect_to_play" = "Please connect to internet to play this";
+"info_play_error" = "Sorry we can not play this at this time, we'll be back as soon as possible";
+"info_radio_ended_title" = "We're 24/7 for real, Please restart the app";
+"info_radio_ended_sub" = "You can now switch to new audio.";
+"info_radio_error" = "Error getting content, Please try again";
+"title_information" = "Information";
+
+//format
+"format_share_app" = "Enjoying %@ right now - Jamit.app";
+"format_content_share" = "I\'m listening to the %@ episode from %@ on %@ . Listen here - %@";
+"format_bitrate" = "Audio Quality: %@";
+"format_minutes" = "%d minutes";
+"format_minute" = "%d minute";
+
+"info_error_connect" = "Network disconnected. Please check your internet settings.";
+"title_go_to_setting" = "Setting";
+"title_cancel" = "Cancel";
+"title_ok" = "OK";
+"title_off" = "OFF";
+"title_sleep_mode" = "Sleep Timer";
+"title_done" = "DONE";
+"title_save" = "SAVE";
+"title_search" = "Search";
+"title_error" = "ERROR";
+
+"info_lose_internet" = "No internet connection. Please check again!";
+"info_email_invalid" = "The email is invalid";
+"info_server_error" = "Error connecting to Jamit. Please try again!";
+
+"info_loading" = "Please wait ...";
+
+"title_downloads" = "My Downloads";
+"title_remove_downloads" = "Remove download";
+"title_download_now" = "Download now";
+"title_delete" = "Remove";
+"info_delete_file" = "Are you sure you want to remove this download?";
+"title_downloading" = "Downloading";
+"title_loading" = "Loading";
+"title_menu_create" = "Create";
+"title_tab_notify" = "Notify";
+
+"info_download_error" = "Download Error. Please try again later";
+"info_sdcard_error" = "Please check the storage on your phone.";
+"info_already_file_downloaded" = "This audio has already been downloaded";
+"info_saved_song_success" = "Audio downloaded successfully";
+"info_delete_success" = "Removed audio successfully";
+"info_deleted_error" = "Error removing audio";
+"info_process_loading" = "Loading...";
+"title_share" = "Share";
+"title_options" = "Options";
+"title_confirm" = "Confirm";
+
+"format_mins" = "%@ min";
+"format_min" = "%@ min";
+"format_secs" = "%@ sec";
+"format_sec" =  "%@ sec";
+
+//HELP STRING
+"title_skip" = "Skip";
+"title_next" = "Next Step";
+"title_join_now" = "Get Started";
+
+"title_help1" ="What's is your gender";
+"title_help2" ="What are you interested in?";
+"title_help3" ="Tell me your name please?";
+"title_help4" ="Subscribe to some podcasts";
+"title_help5" ="Follow some creators";
+
+"info_help1" ="This help us find you more relevant content";
+"info_help2" ="Choose a few categories you like, you can change them later.";
+"info_help3" ="This help your friend to find your Jamit account";
+"info_help4" ="You can always subscribe to more later";
+"info_help5" ="You can always find more creators and podcaster to follow";
+
+"product_id1" = "jamit.premium.1.month";
+"product_id2" = "jamit.premium.3.month";
+"product_id3" = "jamit.premium.12.month";
+
+"price_1" = "$2.99";
+"price_2" = "$7.99";
+"price_3" = "$29.99";
+
+"title_member_1" = "Premium (Monthly)";
+"title_member_2" = "Premium (Quarterly)";
+"title_member_3" = "Premium (Annual)";
+
+"title_datetime_1" = "month";
+"title_datetime_2" = "quarter";
+"title_datetime_3" = "year";
+
+/*Verify*/
+"title_payment" = "Payment";
+"info_no_receipt" = "No receipt data. Try again.";
+"info_receipt_verify_failed" = "Purchase verification failed";
+"info_purchase_expired" = "Premiium membership expired %@";
+"info_purchase_notpurchased" = "Premium membership has not been purchased";
+"info_purchase_success" = "Premium subscription successful!";
+
+/*Purchase*/
+"title_client_invalid" = "Invalid: Not allowed to make this payment";
+"title_payment_cancelled" = "Payment cancelled";
+"info_payment_invalid" = "Error: Invalid purchase identifier";
+"info_payment_not_allowed" = "This device does not support app purchases";
+"info_store_product_not_available" = "Premium package not available yet";
+"info_cloud_service_permission_denied" = "Access to cloud service information is not permitted";
+"info_cloud_service_revoked" = "User has revoked permission to use this cloud service";
+"info_network_error_purchase" = "Cannot connect to iTunes Store";
+
+/*Restore*/
+"title_restore_failed" = "Restore Failed";
+"info_restore_success" = "Your purchases have been restored";
+"info_restore_noproduct" = "No premium membership plan";
+
+"title_purchase_error" = "Premium membership purchase error";
+"info_thanks_purchasing" = "Thanks for subscribing. begin enjoying premium features now!";
+
+"title_restore_purchase" = "Restore Purchases";
+"format_eula" = "Subscription payments will be charged to your iTunes account at confirmation of your purchase. Your subscription will automatically renew and payment will be charged to your iTunes account unless auto-renew is turned off at least 24 hours prior to the end of the current period in your Itunes account settings on the App Store. For more information, please see our %@ and %@";
+
+//USER LOGIN
+"info_tap_login" = "Tap To Login";
+"format_empty_field" = "%@ can not be empty";
+"format_special_field" = "%@ can not contain special characters";
+
+"title_forget_password" = "Forgot Your Password?";
+"info_password_not_match" = "Your password does not match";
+"info_password_current_not_match" = "Password is invalid";
+"info_password_short" = "Your password must have a minimum of 8 characters";
+"info_register_success" = "Welcome! You have signed up successfully. You can sign in now";
+"info_login_success" = "Welcome back! Enjoy listening";
+
+"info_request_login" = "You need to sign in before doing this.";
+"info_request_login_again" = "You have to sign in again before doing this.";
+"info_reset_successfully" = "We just sent you an email to reset your password. Please check your email";
+
+"title_user_name" = "Username";
+"title_display_name" = "Display Name";
+"title_password" = "Password";
+"title_email" = "Email Address";
+"info_hint_forget_user_name" = "Enter your username";
+
+"title_confirm_pass" = "Confirm Password";
+"title_hint_password" = "Enter your password";
+"title_hint_confirm_password" = "Confirm your password";
+"title_hint_email" = "Enter your email";
+
+"title_sign_in" = "Log In";
+"title_sign_up" = "Sign Up";
+"title_sign_out" = "Sign Out";
+"title_skip_login" = "Skip Now";
+"title_create_account" = "Create Account";
+
+"title_submit" = "Submit";
+"title_logout" = "Log Out";
+"title_reset_password" = "Reset Password";
+
+"info_update_done" = "Updated successfully";
+"info_reset_done" = "Reset password successfully";
+"info_profile_updated" = "Your profile has been updated.";
+"info_update_profile_error" = "Update profile error";
+"info_wrong_user_pass" = "Wrong username or password";
+"info_logout" = "Are you sure you want to log out?";
+"info_sign_out_successfully" = "Logged out successfully";
+
+
+"title_just_now" = "Just now";
+"title_second_ago" = "seconds ago";
+"title_a_minute_ago" = "A minute ago";
+"title_minute_ago" = "minutes ago";
+"title_a_hour_ago" = "An hour ago";
+"title_hour_ago" = "hours ago";
+"title_yester_day" = "Yesterday";
+"title_day_ago" = "days ago";
+"title_last_week" = "Last week";
+"title_weeks_ago" = "weeks ago";
+"title_last_month" = "Last Month";
+"title_month_ago" = "months ago";
+"title_last_year" = "Last year";
+"title_year_ago" = "years ago";
+
+"title_featured_stories" = "Featured";
+"title_play_all" = "Play All";
+"format_episodes" = "%@ episodes";
+"format_episode" = "%@ episode";
+
+"title_tab_library" = "Library";
+"title_tab_profile" = "Profile";
+
+"title_update_premium" = "Get Jamit Premium";
+"info_premium_member" = "You are a Premium Member";
+"format_removed_ads" = "Remove ads for %@";
+"format_remove_ads" = "Exclusives, Ad-Free listening";
+"title_buy_now" ="SUBSCRIBE";
+"title_skip" = "Skip";
+"info_listen_premium" = "Early Access to new shows";
+"info_updating_member" = "Upgrading membership…";
+
+"title_add_favorite" = "Add to favourites";
+"info_added_favorite" = "Added episodes to your favourites";
+"title_remove_favorite" = "Remove from favourite";
+"info_removed_favorite" = "Removed episodes from your favourites";
+"title_no_description" = "No Description";
+
+"info_not_activated_account" = "Please check your email and activate your account";
+"info_sign_in_successfully" = "Signed up successfully. Please check your email to activate account";
+"info_reset_pass_success" = "Reset password successfully. Check your email to reset password";
+"title_back" = "Back";
+"info_update_purchase_success" = "Premium membership updated";
+"info_member_expired" = "Your premium membership has expired. Resubscribe to continue enjoying Jamit fully";
+
+// NEW STRINGS
+"title_subscribe" = "Subscribe";
+"title_subscribed" = "Subscribed";
+"format_title_community" = "%@\'s Community";
+"format_title_comment" = "%@\'s Comments";
+"info_hint_review" = "Leave your review";
+"info_hint_comment" = "Leave your comment";
+"info_login_to_add_review" = "Please log in to post your review";
+"info_login_to_add_comment" = "Please log in to post your comment";
+"info_delete_review" = "Are you sure you want to delete this review?";
+"info_delete_comment" = "Are you sure you want to delete this comment?";
+"info_data_error" = "There was an error processing your request. Please try again later";
+"info_subscribed_successfully" = "Subscribed successfully";
+"info_unsubscribed_successfully" = "Unsubscribed successfully";
+
+"title_podcasts" = "Podcasts";
+"title_stories" = "Shorts";
+"title_audio_books" = "Audio Books";
+"title_my_subscriptions" = "My Subscriptions";
+"info_login_get_subscriptions" = "Please log in to view your subscriptions";
+
+"title_follow" = "Follow";
+"title_unfollow" = "Unfollow";
+"info_follow_successfully" = "Followed successfully";
+"info_unfollow_successfully" = "Unfollowed successfully";
+
+"format_stories" = "%@ shorts";
+"format_story" = "%@ short";
+"title_no_story" = "No short";
+"title_no_episode" = "No episode";
+"title_my_stories" = "My Shorts";
+"title_no_show" = "No show";
+"format_title_story" = "%@";
+"title_record_story" = "Record Short";
+
+//UPLOAD STORY
+"title_story_title" = "Short's Title";
+"title_series_title" = "Series Title";
+"title_explicit_content" = "Explicit content";
+"title_upload_story" = "Upload Short";
+"title_start_recording" = "Start Recording";
+"title_stop_recording" = "Stop Recording";
+"title_record_again" = "Record Again";
+"info_recording_again" = "Do you want to record again?";
+"info_stop_record" = "Do you want to stop recording?";
+"info_record_back" = "You are in a recording session. Do you want to quit?";
+"info_recording_error" = "Unknown Error";
+"format_maximum_minute" = "Limit: %@ minutes";
+"info_upload_file_error" = "Please record short before uploading";
+"info_upload_file_success" = "Uploaded short successfully";
+"info_upload_file_when_recording" = "Please stop recording before uploading";
+
+"info_permission_denied" = "Permission Denied. We cannot take this action";
+"info_permission_unknow_error" = "Unknown error requesting permission.";
+
+"title_delete_story" = "Delete Short";
+"info_delete_story" = "Are you sure you want to delete this short?";
+"info_delete_story_success" = "Deleted short successfully";
+"info_delete_story_error" = "Error deleting this short. Please try again later";
+"title_tab_categories" = "Categories";
+
+"info_hint_search" = "Search Episodes, Shows and Hosts";
+"title_yes" = "Yes";
+"info_select_image_error" = "Error selecting image";
+"info_change_avatar" = "Are you sure you want to change your avatar?";
+"info_change_avatar_success" = "Uploaded avatar successfully";
+"info_change_avatar_error" = "Error: Avatar change failed";
+
+"format_follower" = "%@ follower";
+"format_followers" = "%@ followers";
+"format_following" = "%@ following";
+
+"title_tab_followers" = "Followers";
+"title_tab_following" = "Following";
+"title_tab_who_to_follow" = "Find People";
+
+"format_like" = "%@ like";
+"format_likes" = "%@ likes";
+
+"format_comment" = "%@ comment";
+"format_comments" = "%@ comments";
+"title_tags" = "Tags";
+"title_trending_show" = "Trending";
+"format_with" = "with %@";
+"info_no_suggest_story" = "Follow more people to see their shorts.";
+
+//Story Strings
+"title_tell_story" = "Create A Short";
+"title_story_tags" = "Short Tags (separated by commas)";
+"title_story_category" = "Select short category";
+"title_story_language" = "Select short language";
+"title_story_series" = "Select your series";
+"info_no_story_language" = "No Language Found";
+"info_no_story_category" = "No Category Found";
+
+"title_select_country" = "Select a country";
+"title_select_language" = "Select a language";
+"title_support" = "Support";
+"title_creator_support" = "Creators Support";
+"info_confirm_support" = "100% of the payment will go to the creator.";
+"title_continue" = "Continue";
+"title_share_twitter" = "Tweet";
+"info_tweet_share" = "I\'m listening to the %@ episode of %@ on %@ . Listen here";
+
+"info_login_to_add_review" = "Log in to leave a review";
+"info_login_to_add_comment" = "Log in to post a comment";
+
+"title_trending_users" = "Trending People";
+"title_popular_topics" = "Popular Topics";
+"title_explore_stories" = "Explore Shorts";
+"title_your_story" = "Your short";
+"title_tab_records" = "Records";
+
+//New Event Strings
+"title_event_page" = "Live";
+"title_live_page" = "Live Now";
+"title_social_tag_deep_link" = "The Social Audio Network!";
+"info_social_tag_deep_link" = "Listen to great stories from amazing storytellers and creators wherever and whenever with Jamit.";
+"info_error_deep_link" = "Sharing error, please try again later";
+"title_menu_create" = "Create";
+"title_menu_record_voice" = "Create A Short";
+"title_menu_live_voice" = "Create Live Event";
+"title_live_events" = "Live Events";
+"title_upcoming_events" = "Upcoming Events";
+"title_past_events" = "Past Events";
+"title_event_join_now" = "Join Now";
+"title_create_live" = "Create Live Event";
+"title_time" = "Time";
+"title_time_live" = "Live Now";
+"title_time_later" = "Schedule Later";
+"title_event_category" = "Select event category";
+"title_event_date" = "Select date";
+"title_event_time" = "Select time";
+"title_event_title" = "Event Title";
+"title_create_event" = "Create Event";
+"title_event_tags" = "Event Tags (separated by commas)";
+"info_create_event_successfully" = "Created event successfully!";
+"info_empty_date_time" = "Please select date/time for this event!";
+"title_event_scheduled" = "Live Event Scheduled!";
+"info_share_event_scheduled" = "You can share link for user to follow";
+"title_replay" = "Replay";
+"title_notify_me" = "Notify me";
+"title_view_all" = "View all";
+"title_no_event" = "No Event";
+
+"event_info_present" = "This live event is starting now, will you like to join";
+"event_info_past" = "This live event is past the stated time";
+"event_info_future" = "This live event is starting on %@ at %@";
+"event_info_now" = "This live event is ongoing, will you like to join";
+
+"title_submit_podcast" = "Submit A Podcast";
+
+"format_listeners" = "%@ listeners";
+"format_listener" = "%@ listener";
+"info_be_first_one" = "Be the first one to join";
+"title_my_events" = "My Events";
+"title_events" = "Events";
+"title_manage" = "Manage";
+"title_remove_me" = "Remove me";
+"info_remove_me" = "Are you sure to leave this event?";
+"info_notify_me" = "Do you want to be notified about this event?";
+"info_join_now" = "Do you want to join this event now?";
+"info_added_listener" = "Participant added!";
+"info_removed_listener" = "Participant removed!";
+"info_event_error" = "This Live Event has not started or has ended!";
+"info_update_premium_event" = "Upgrade to premium to download this event";
+"title_leave_event" = "Leave Quietly";
+"title_leave" = "Leave";
+"title_waiting" = "Waiting…";
+"info_confirm_leave" = "Are you sure you want to leave this event?";
+"format_title_event" = "%@\'s Events";
+
+"format_invite_user" = "\"%@\" invited you to join \"%@\" event. Do you want to accept it now?";
+"title_accept" = "Accept";
+"title_invitation" = "Invitation";
+"title_decline" = "Decline";
+"info_declined_event" = "Declined Event!!";
+"info_joined_event" = "Joined Event!!";
+"info_send_audio_start" = "Now talking!";
+"info_send_audio_stop" = "Mute!";
+"info_event_stop" = "This event has ended";
+"info_leave_event" = "You have left the event!";
+"info_send_audio_error" = "Error, using your mic";
+"info_stop_audio_error" = "Error, trying to mute you";
+"info_speaker_on_air" = "You a speaker now. Turn your mic on when ready.";
+
+"info_confirm_turn_on_speaker" = "Make this user a speaker?";
+"info_confirm_turn_off_speaker" = "Remove this user from speaker list?";
+
+"info_no_data_find_user" = "Invite friends to your event";
+"info_no_speaker" = "No speaker";
+"info_search_user" = "Search user";
+"title_speakers" = "Speakers";
+"title_permission" = "Permission";
+"title_invite" = "Invite";
+"title_invited" = "Invited";
+"title_kick_off" = "Kick out";
+"title_remove" = "Remove";
+
+"info_invite_success" = "Invited user successfully!";
+"info_kicked_off_success" = "Kicked out user successfully!";
+"info_my_kicked_off" = "You have been kicked out of the event!";
+"info_invite_error" = "Error: User Invite unsuccessful";
+"title_accept_join" = "Accept & Join";
+"format_update_speaker" = "Brought %@ to the stage";
+"format_update_no_speaker" = "Updated %@ as listener successfully!!";
+"info_updated_error" = "Error: trying to update live participant";
+"title_send_a_tip" = "Send A Tip";
+"format_request_speaker" = "%@ raised hand";
+"format_already_speaker" = "Speaker: %@";
+"info_request_speaker" = "Tap \"Edit\" button to update";
+"format_host_accept_speaker" = "%@ accepted %@ as speaker";
+"format_host_decline_speaker" = "%@ declined %@ as speaker";
+"format_host_remove_speaker" = "%@ removed %@ as speaker";
+"title_edit" = "Edit";
+"info_send_request_success" = "Sent request successfully!!";
+"info_send_request_error" = "Sent request error!!";
+"info_no_headset_found" = "No Headset Found";
+
+"title_md_select_headset" = "Select Headset";
+"title_md_bluetooth" = "Bluetooth Headset";
+"title_md_external_speaker" = "External Speaker";
+"title_md_internal_speaker" = "Internal Speaker";
+"title_md_wired_headset" = "Wired Headset";
+"info_reset_raise_hand" = "Opps! Please raise your hand again.";
+
+
+"downloading_in_background" = "Downloading in Background";
+"friend_no_like" = "We are unable to retrieve @%@'s favourite shows at the moment, seems like @%@ has no favourite shows";
+
+
+// Submit podcast RSS feed
+"info_duplicate_podcast_feed" = "Duplicate Podcast Feed";
+"info_submit_podcast" = "Submit Podcast";
+"info_submit_label" = "We are here to work with you from growing your audience to editorial assistance. Submit you RSS feed below and we will be in touch.";
+"info_error" = "Error";
+"info_input_required" = "Input required";
+"info_feed_url_required_msg" = "Rss feed url is required";
+"info_country_required_msg" = "country must be selected";
+"info_language_required_msg" = "Language must be selected";
+"null_value" = "null";
+"gender_male" = "male";
+"gender_female" = "female";
+"date_of_birth_required" = "Date of Birth must be selected";
+"first_name_required" = "First Name must not be empty";
+"last_name_required" = "Last Name must not be empty";
+"profile_no_data" = "You have to login to access your profile";
+"profile_no_short" = "You have no shorts.\n Click the on the \"mic-icon\" to create a short";
+"profile_no_likes" = "You have no item in your Favourites.\nLike Podcasts and they will show up here.";

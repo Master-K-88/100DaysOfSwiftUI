@@ -1,0 +1,140 @@
+{
+  "pins" : [
+    {
+      "identity" : "afnetworking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AFNetworking/AFNetworking.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "4eaec5b586ddd897ebeda896e332a62a9fdab818"
+      }
+    },
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "51d67100121d586c9d15ec0227de96442af4dd6d"
+      }
+    },
+    {
+      "identity" : "fradioplayer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/fethica/FRadioPlayer.git",
+      "state" : {
+        "revision" : "983817334905e438ea7eba9411311cce4258197c",
+        "version" : "0.1.22"
+      }
+    },
+    {
+      "identity" : "jgprogresshud",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JonasGessner/JGProgressHUD.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "103d67f308b8c0c18926061025549af98cdfd6fc"
+      }
+    },
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher.git",
+      "state" : {
+        "revision" : "022e4eeb79f817748544b318b991d9a70036bbf8",
+        "version" : "7.2.4"
+      }
+    },
+    {
+      "identity" : "marqueelabel",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/cbpowell/MarqueeLabel.git",
+      "state" : {
+        "revision" : "f2c72a5f8568579dade6350dc26a482076d3d346",
+        "version" : "4.3.0"
+      }
+    },
+    {
+      "identity" : "nvactivityindicatorview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ninjaprox/NVActivityIndicatorView.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "bcb52371f2259254bac6690f92bb474a61768c47"
+      }
+    },
+    {
+      "identity" : "sheeeeeeeeet",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/danielsaidi/Sheeeeeeeeet.git",
+      "state" : {
+        "revision" : "9105b0e7fc3c5703e09b736fb85a753a4cc934fd",
+        "version" : "3.2.2"
+      }
+    },
+    {
+      "identity" : "snackbar.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ahmedAlmasri/SnackBar.swift",
+      "state" : {
+        "revision" : "9efa0f9d2a6ae35384a878a0d74dbafd5001a672",
+        "version" : "0.1.2"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "f222cbdf325885926566172f6f5f06af95473158",
+        "version" : "5.6.0"
+      }
+    },
+    {
+      "identity" : "swiftystorekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bizz84/SwiftyStoreKit.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "f3265c7c211907ad913102c61c3972b880f0675c"
+      }
+    },
+    {
+      "identity" : "taglistview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ElaWorkshop/TagListView.git",
+      "state" : {
+        "revision" : "b30b61826736f4d9ec04aef5df891f3914423f16",
+        "version" : "1.4.1"
+      }
+    },
+    {
+      "identity" : "toast-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/BastiaanJansen/toast-swift.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7fc825d0bbb55a8d98d46af48f51844e0298e7b5"
+      }
+    },
+    {
+      "identity" : "uicircularprogressring",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/luispadron/UICircularProgressRing.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "5b00b9b42b0a7db6f8239d526d7251eef9a63dcd"
+      }
+    },
+    {
+      "identity" : "voxeet-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:voxeet/voxeet-sdk-ios.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "0387391196c62cf3fbbb60a8acdfb2844233a4dc"
+      }
+    }
+  ],
+  "version" : 2
+}
